@@ -1,0 +1,14 @@
+Enter an integer :
+21
+Using next integer():21
+Enter Double value :
+33.3
+Using next double value():33.3
+The increment value by 1 ():22
+The decrement value by 1 ():32.3
+The increment value by 5 ():27
+The decrement value by 5 ():27.299999999999997
+
+Usingh nextInt() mod 10: 7
+Using nextDouble() mod 10: 7.299999999999997
+1476439.6241044214
