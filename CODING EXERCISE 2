@@ -1,0 +1,47 @@
+package myScanner;
+
+import java.util.Scanner;
+
+public class Exercise2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int integerNumber;
+		double doubleNumber;
+		int x;
+		double y;
+		
+		Scanner scan = new Scanner (System.in); 
+		
+		System.out.println("Enter an integer :");
+		integerNumber = scan.nextInt();
+		System.out.println("Using next integer():" +integerNumber);
+		
+		System.out.println("Enter Double value :");
+		doubleNumber = scan.nextDouble();
+		System.out.println("Using next double value():" +doubleNumber);
+        
+		//printing a +1 increment value  using ++
+		integerNumber++;
+		doubleNumber--;
+		System.out.println("The increment value by 1 ():" +integerNumber);
+		System.out.println("The decrement value by 1 ():" +doubleNumber);
+		
+		//printing a +5 increment value  using = variable +5
+		integerNumber = integerNumber +5;
+		doubleNumber = doubleNumber -5;
+		System.out.println("The increment value by 5 ():" +integerNumber);
+		System.out.println("The decrement value by 5 ():" +doubleNumber);
+		
+		//dividing 
+		integerNumber = integerNumber %10;
+		doubleNumber = doubleNumber % 10;
+		System.out.println("\nUsingh nextInt() mod 10: " +integerNumber);	
+		System.out.println("Using nextDouble() mod 10: "+doubleNumber);
+		
+		double z = Math.pow(integerNumber, doubleNumber);
+		System.out.println(z);
+
+	}
+
+}
