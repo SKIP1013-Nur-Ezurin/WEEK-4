@@ -10,7 +10,7 @@ public class Exercise1b {
 		
 		int numberItem;
 		double firstitem,seconditem,thirditem;
-		int firstqua,secqua,thirdqua = 0;
+		int firstquantity,secquantity,thirdquantity = 0;
 		double price,total,TotalPrice;
 		double discount = 0;
 		double totalfirst,totalsec,totalthird;
@@ -21,22 +21,22 @@ public class Exercise1b {
 	    System.out.print("Enter price of first item :RM ");
 	    firstitem = input.nextDouble();
 		System.out.print("Enter quantity of first item: ");
-		firstqua = input.nextInt();
-		totalfirst = firstitem*firstqua;
+		firstquantity = input.nextInt();
+		totalfirst = firstitem*firstquantity;
 		System.out.println("");
 			
 	    System.out.print("Enter price of second item:RM");
 	    seconditem = input.nextDouble();
 		System.out.print("Enter quantity of second item: ");
-		secqua = input.nextInt();
-		totalsec = seconditem*secqua;
+		secquantity = input.nextInt();
+		totalsec = seconditem*secquantity;
 		System.out.println("");
 		
 		System.out.print("Enter price of third item:RM");
 		thirditem = input.nextDouble();
 		System.out.print("Enter quantity of third item: ");
-		thirdqua = input.nextInt();
-		totalthird = thirditem*thirdqua;
+		thirdquantity = input.nextInt();
+		totalthird = thirditem*thirdquantity;
 		System.out.println("");
 		
 		total = totalfirst + totalsec + totalthird;
