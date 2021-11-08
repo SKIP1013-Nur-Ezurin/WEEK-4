@@ -1,0 +1,61 @@
+package Assignment;
+
+import java.util.Scanner;
+
+public class Exercise1b {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Scanner input = new Scanner(System.in);
+		
+		int numberItem;
+		double firstitem,seconditem,thirditem;
+		int firstqua,secqua,thirdqua = 0;
+		double price,total,TotalPrice;
+		double discount = 0;
+		double totalfirst,totalsec,totalthird;
+		
+
+		System.out.print("Enter the number of items: ");
+		numberItem = input.nextInt();
+	    System.out.print("Enter price of first item :RM ");
+	    firstitem = input.nextDouble();
+		System.out.print("Enter quantity of first item: ");
+		firstqua = input.nextInt();
+		totalfirst = firstitem*firstqua;
+		System.out.println("");
+			
+	    System.out.print("Enter price of second item:RM");
+	    seconditem = input.nextDouble();
+		System.out.print("Enter quantity of second item: ");
+		secqua = input.nextInt();
+		totalsec = seconditem*secqua;
+		System.out.println("");
+		
+		System.out.print("Enter price of third item:RM");
+		thirditem = input.nextDouble();
+		System.out.print("Enter quantity of third item: ");
+		thirdqua = input.nextInt();
+		totalthird = thirditem*thirdqua;
+		System.out.println("");
+		
+		total = totalfirst + totalsec + totalthird;
+		
+		if (total>100)
+			{	
+			discount = 0.2*total;
+			}    
+	    else
+	    	{	
+	    	discount = 0.1*total;
+	    	}
+	       
+		TotalPrice = total-discount;
+		        
+        System.out.printf("Total  price      : RM%.2f%n", total);
+		System.out.printf("Discount received : RM%.2f%n", discount);
+		System.out.printf("Price to be paid  : RM%.2f%n", TotalPrice);
+
+	}
+
+}
